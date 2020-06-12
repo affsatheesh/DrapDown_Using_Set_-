@@ -1,0 +1,10 @@
+Set<String>treeset = new TreeSet<String>();
+//		for (WebElement webElement : optionlist) {
+//			String text3=webElement.getText();
+//			treeset.add(text3);
+//		}
+//		for (String string : treeset)
+//		{
+//			System.out.println(string);
+//
+//		}
