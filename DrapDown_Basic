@@ -1,0 +1,43 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class DropDownUsingSet {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","D:\\software\\Study@@\\jar files\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+
+		driver.get("file:///D:/DropdownHTML%20CODE.html");
+		
+		WebElement dropdown = driver.findElement(By.id("taj"));	
+		Select sal = new Select(dropdown);
+		List<WebElement>optionlist =sal.getOptions();
+		int listsize =    optionlist.size();
+		System.out.println(listsize);
+	
+
+		// normally we will get text
+
+		   for (WebElement webElement : optionlist)
+		    {
+			String text =	webElement.getText();
+			System.out.println(text);
+			}
+		   sal.selectByIndex(3);
+
+		//   Normal for loop
+		//  for(int i=0;i<optionlist.size();i++)
+		//  {
+		//  	WebElement oneoption = optionlist.get(i);
+		// String text1 = 	oneoption.getText();
+		// hs.add(text1);			
+		//  }
