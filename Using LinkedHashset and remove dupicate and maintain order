@@ -1,0 +1,11 @@
+Set<String> linkedset = new LinkedHashSet<String>();
+		//		for (WebElement webElement : optionlist)
+		//		{
+		//			String text2=webElement.getText();
+		//			linkedset.add(text2);
+		//		}
+		//		
+		//		for (String string : linkedset)
+		//		{
+		//			System.out.println(string);
+		//		}
