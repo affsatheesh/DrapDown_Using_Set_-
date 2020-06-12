@@ -1,0 +1,13 @@
+Set<String> hs = new HashSet<String>();
+
+		//		for (WebElement webElement : optionlist)
+		//		{
+		//			String text1 =	webElement.getText();	
+		//			hs.add(text1);
+		//		}
+
+		//		for (String string : hs) 
+		//		{
+		//			System.out.println(string);
+		//		}
+
